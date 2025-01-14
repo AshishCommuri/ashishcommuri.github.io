@@ -4,68 +4,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="author" content="Ashish Commuri">
+    <title>Ashish Commuri - Backend Java Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 50px 10%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .resume, .projects {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .resume ul, .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .resume li, .projects li {
+            margin-bottom: 15px;
+        }
+
+        .projects a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .projects a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
+
     <header>
-        <h1>My Portfolio</h1>
-        <p>Java Backend Developer with 1.5 years of experience in building REST APIs</p>
+        <h1>Ashish Commuri</h1>
+        <p>Backend Java Developer | Problem Solver | Innovator</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#work-experience">Work Experience</a></li>
-            <li><a href="#projects">Project Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am a backend Java developer with 1.5 years of experience in building robust REST APIs. I have mid-level knowledge of Oracle and MySQL and a growing proficiency in Spring Boot and microservices. In addition, I have basic skills in HTML and CSS, which I use to create intuitive and user-friendly interfaces. Currently, I am focused on enhancing my expertise in Spring Boot and microservices architecture to deliver scalable and efficient solutions.</p>
-    </section>
-
-    <section id="work-experience">
-        <h2>Work Experience</h2>
-        <ul>
-            <li><strong>Backend Java Developer</strong>: Developing and managing REST APIs using Spring Boot for various enterprise-level applications.</li>
-            <li><strong>Database Management</strong>: Proficient in handling Oracle and MySQL databases for data persistence and optimization.</li>
-            <li><strong>Microservices Transition</strong>: Learning and implementing microservices to modernize monolithic architectures.</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Project Portfolio</h2>
-        <div class="project">
-            <h3>IFSC Code Management</h3>
-            <p>Developed a robust system for managing banking IFSC codes using Spring's JdbcTemplate and NamedParameterJdbcTemplate. The project focused on database interaction and CRUD operations with Oracle and MySQL databases.</p>
+    <section class="container">
+        <!-- About Me Section -->
+        <div class="resume">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a passionate Backend Java Developer with 2 years of hands-on experience in building high-performance REST APIs and microservices using Java, Spring, and Spring Boot. I thrive on solving complex challenges, particularly in production environments, where I’ve successfully identified and resolved critical issues while minimizing downtime.</p>
+            <p>My expertise lies in the financial domain, where I have contributed to the development of key banking features and transaction systems that prioritize security and scalability. I am continuously motivated by a desire to innovate and create efficient solutions that positively impact both the team and end-users.</p>
         </div>
-        <div class="project">
-            <h3>Transaction Logging and Processing</h3>
-            <p>Implemented a transaction logging module that dynamically handles special cases, such as inserting additional columns based on transaction types and header values. This enhanced the flexibility and scalability of the transaction processing system.</p>
+
+        <!-- Skills Section -->
+        <div class="resume">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Java</li>
+                <li><strong>Frameworks:</strong> Spring, Spring Boot</li>
+                <li><strong>Databases:</strong> Oracle, MySQL</li>
+                <li><strong>Tools & Platforms:</strong> Maven, Git</li>
+                <li><strong>Other Skills:</strong> REST API Development, Microservices Architecture, Production Issue Debugging</li>
+            </ul>
         </div>
-        <div class="project">
-            <h3>ETL Tool with GUI</h3>
-            <p>Designed and developed a complete ETL tool with a user-friendly GUI for managing Oracle and MySQL databases. The tool, built using Java 1.8 and Spring Boot 2.7.x, was packaged as an executable file for seamless deployment and use.</p>
+
+        <!-- Professional Experience Section -->
+        <div class="resume">
+            <h2 class="section-title">Professional Experience</h2>
+            <ul>
+                <li><strong>Backend Java Developer</strong> - Financial Software & Systems Pvt. Ltd. (02/2023 – Present)</li>
+                <ul>
+                    <li>Delivered core banking features such as AePS, CKYC, and NPCI Scheduler.</li>
+                    <li>Resolved complex production issues and implemented monitoring systems to reduce incidents.</li>
+                    <li>Built SMS Proxy and FIXML Proxy for secure message routing.</li>
+                    <li>Implemented UPI Transaction Routing to improve performance and processing speed.</li>
+                </ul>
+
+                <li><strong>Software Engineering Trainee</strong> - Financial Software & Systems Pvt. Ltd. (08/2023 – 01/2024)</li>
+                <ul>
+                    <li>Gained hands-on experience in API development and backend programming with Java and Spring.</li>
+                    <li>Worked on Spring Boot projects involving RESTful API design and database integration using MySQL and H2.</li>
+                </ul>
+
+                <li><strong>Engineer Intern</strong> - Financial Software & Systems Pvt. Ltd. (02/2023 – 07/2023)</li>
+                <ul>
+                    <li>Acquired proficiency in HTML, CSS, Java, and worked on Spring Framework and SQL development.</li>
+                </ul>
+            </ul>
         </div>
+
+        <!-- Projects Section -->
+        <div class="projects">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li><a href="https://github.com/yourusername/e-commerce-product-catalog">E-Commerce Product Catalog System</a></li>
+                <li><a href="https://github.com/yourusername/banking-system">Banking System</a></li>
+                <li><a href="https://github.com/yourusername/library-management-system">Library Management System</a></li>
+                <li><a href="https://github.com/yourusername/microservices-projects">Microservices Project Demo</a></li>
+            </ul>
+        </div>
+
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you want to discuss opportunities, collaborate on projects, or learn more about my work, feel free to reach out:</p>
-        <ul>
-            <li>Email: yourname@example.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></li>
-            <li>GitHub: <a href="https://github.com/yourgithub">github.com/yourgithub</a></li>
-        </ul>
-    </section>
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>Find me on <a href="https://github.com/yourusername" target="_blank">GitHub</a> | <a href="mailto:ashishcommuri@gmail.com">Contact Me</a></p>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
